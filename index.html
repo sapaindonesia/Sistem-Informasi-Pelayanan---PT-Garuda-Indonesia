@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistem Informasi Pelayanan - PT Garuda Indonesia</title>
+  <meta name="description" content="Portal pelayanan pelanggan PT Garuda Indonesia - Cek penerbangan, booking, check-in, bagasi, customer service 24/7.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Admin Toggle -->
+  <button class="btn admin-toggle position-fixed" style="top: 20px; right: 20px; z-index: 9999; background: #FDB927; color: #003087;" onclick="window.location.href='admin.html'">
+    <i class="fas fa-cog"></i> Admin
+  </button>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4" href="#">
+        <i class="fas fa-plane me-2"></i>Garuda Indonesia
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#beranda">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#profil">Profil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#layanan">Layanan</a></li>
+          <li class="nav-item"><a class="nav-link" href="pelayanan.html">Pelayanan Lengkap</a></li>
+          <li class="nav-item"><a class="nav-link" href="#berita">Berita</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="beranda" class="hero text-white text-center py-5 mb-5">
+    <div class="container py-5">
+      <h1 class="display-4 fw-bold mb-4">Sistem Informasi Pelayanan<br><span class="bumn-badge">PT Garuda Indonesia (Persero) Tbk</span></h1>
+      <p class="lead mb-4 fs-4">Penerbangan nyaman | Booking mudah | Layanan 24/7 | Check-in online | Pelacakan bagasi</p>
+      <div class="d-flex flex-column flex-md-row gap-3 justify-content-center">
+        <a href="pelayanan.html" class="btn btn-light btn-lg px-5 py-3 fs-5 rounded-pill">
+          <i class="fas fa-plane-departure me-2"></i>Check-in Online
+        </a>
+        <a href="#layanan" class="btn btn-outline-light btn-lg px-5 py-3 fs-5 rounded-pill">
+          <i class="fas fa-list me-2"></i>Katalog Layanan
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Stats -->
+  <section class="container my-5">
+    <div class="row g-4 text-center">
+      <div class="col-md-3">
+        <div class="card border-0 shadow h-100">
+          <div class="card-body">
+            <i class="fas fa-plane fa-3x text-garuda-blue mb-3"></i>
+            <h3 class="display-4">5000+</h3>
+            <p class="fw-bold">Penerbangan Harian</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card border-0 shadow h-100">
+          <div class="card-body">
+            <i class="fas fa-users fa-3x text-garuda-orange mb-3"></i>
+            <h3 class="display-4">50 Juta</h3>
+            <p class="fw-bold">Penumpang/Tahun</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card border-0 shadow h-100">
+          <div class="card-body">
+            <i class="fas fa-route fa-3x text-garuda-blue mb-3"></i>
+            <h3 class="display-4">50+</h3>
+            <p class="fw-bold">Destinasi Global</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card border-0 shadow h-100">
+          <div class="card-body">
+            <i class="fas fa-clock fa-3x text-garuda-orange mb-3"></i>
+            <h3 class="display-4">24/7</h3>
+            <p class="fw-bold">Customer Care</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Profil -->
+  <section id="profil" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5 section-title"><i class="fas fa-building me-3 text-garuda-blue"></i>Profil Perusahaan</h2>
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <img src="https://akcdn.detik.net.id/customthumb/2009/07/23/4/Garuda-Logo-Vertical-dalam.jpg?w=700&q=90" class="img-fluid rounded-4 shadow-lg" alt="PT Garuda Indonesia">
+        </div>
+        <div class="col-lg-6">
+          <h4 class="fw-bold mb-4 text-garuda-blue">PT Garuda Indonesia (Persero) Tbk</h4>
+          <p class="fs-5 mb-4"><strong>Visi:</strong> Menjadi maskapai penerbangan terbaik Asia Tenggara dengan pelayanan world class.</p>
+          <p class="fs-5 mb-4"><strong>Misi:</strong></p>
+          <ul class="list-unstyled fs-6">
+            <li><i class="fas fa-check text-garuda-orange me-2"></i>Penyediaan penerbangan aman, nyaman, tepat waktu</li>
+            <li><i class="fas fa-check text-garuda-orange me-2"></i>Pelayanan premium Garuda Indonesia Experience</li>
+            <li><i class="fas fa-check text-garuda-orange me-2"></i>Ekspansi rute internasional strategis</li>
+            <li><i class="fas fa-check text-garuda-orange me-2"></i>Inovasi digital untuk kemudahan penumpang</li>
+          </ul>
+          <a href="#" class="btn btn-garuda-blue btn-lg px-4 rounded-pill">Laporan Tahunan <i class="fas fa-download ms-2"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Layanan -->
+  <section id="layanan" class="py-5">
+    <div class="container">
+      <div class="search-container mb-5">
+        <input type="text" id="searchInputLayanan" placeholder="Cari layanan cepat... (check-in, bagasi, delay, refund)">
+        <i class="fas fa-search search-icon"></i>
+      </div>
+      <h2 class="text-center mb-5 section-title"><i class="fas fa-tools text-garuda-orange me-3"></i>Layanan Utama</h2>
+      <div class="row g-4" id="layananGrid">
+        <div class="col-lg-4 col-md-6 service-item" data-keywords="check-in online boarding pass">
+          <div class="card h-100 shadow hover-lift">
+            <div class="card-body text-center p-4">
+              <div class="service-icon mb-4"><i class="fas fa-mobile-alt fa-2x text-garuda-blue"></i></div>
+              <h5 class="card-title">Web Check-in</h5>
+              <p class="card-text">Check-in 48 jam sebelum keberangkatan, pilih kursi</p>
+              <a href="pelayanan.html#checkin" class="btn btn-outline-garuda-blue rounded-pill">Check-in Sekarang</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 service-item" data-keywords="flight status delay jadwal">
+          <div class="card h-100 shadow hover-lift">
+            <div class="card-body text-center p-4">
+              <div class="service-icon mb-4"><i class="fas fa-clock fa-2x text-garuda-orange"></i></div>
+              <h5 class="card-title">Flight Status</h5>
+              <p class="card-text">Cek jadwal, delay, gate real-time</p>
+              <a href="pelayanan.html#status" class="btn btn-outline-garuda-orange rounded-pill">Cek Status</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 service-item" data-keywords="bagasi tracking hilang">
+          <div class="card h-100 shadow hover-lift">
+            <div class="card-body text-center p-4">
+              <div class="service-icon mb-4"><i class="fas fa-suitcase fa-2x text-garuda-blue"></i></div>
+              <h5 class="card-title">Tracking Bagasi</h5>
+              <p class="card-text">Lacak bagasi, lapor hilang</p>
+              <a href="pelayanan.html#bagasi" class="btn btn-outline-garuda-blue rounded-pill">Lacak Bagasi</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 service-item" data-keywords="refund cancel ubah jadwal">
+          <div class="card h-100 shadow hover-lift">
+            <div class="card-body text-center p-4">
+              <div class="service-icon mb-4"><i class="fas fa-undo fa-2x text-garuda-orange"></i></div>
+              <h5 class="card-title">Refund & Reschedule</h5>
+              <p class="card-text">Ubah/batal tiket, pengembalian dana</p>
+              <a href="pelayanan.html#refund" class="btn btn-outline-garuda-orange rounded-pill">Kelola Tiket</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 service-item" data-keywords="keluhan aduan feedback">
+          <div class="card h-100 shadow hover-lift">
+            <div class="card-body text-center p-4">
+              <div class="service-icon mb-4"><i class="fas fa-comment-dots fa-2x text-garuda-blue"></i></div>
+              <h5 class="card-title">Keluhan Pelanggan</h5>
+              <p class="card-text">Feedback layanan, aduan penumpang</p>
+              <a href="pelayanan.html#complaint" class="btn btn-outline-garuda-blue rounded-pill">Aduan</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 service-item" data-keywords="lounge seat upgrade vip">
+          <div class="card h-100 shadow hover-lift">
+            <div class="card-body text-center p-4">
+              <div class="service-icon mb-4"><i class="fas fa-crown fa-2x text-garuda-orange"></i></div>
+              <h5 class="card-title">Garuda Lounge</h5>
+              <p class="card-text">Upgrade seat, akses lounge premium</p>
+              <a href="pelayanan.html#lounge" class="btn btn-outline-garuda-orange rounded-pill">Premium Service</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Berita -->
+  <section id="berita" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5 section-title"><i class="fas fa-newspaper me-3 text-garuda-orange"></i>Berita & Pengumuman</h2>
+      <div class="row" id="beritaList">
+        <!-- Populated by JS -->
+      </div>
+      <div class="text-center mt-4">
+        <button class="btn btn-outline-garuda-blue btn-lg" onclick="loadMoreBerita()">Load More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 section-title"><i class="fas fa-phone me-3 text-garuda-blue"></i>Hubungi Garuda Indonesia</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="row g-4 mb-5">
+            <div class="col-md-4 text-center">
+              <i class="fas fa-phone fa-3x text-garuda-blue mb-3"></i>
+              <h5>Call Center</h5>
+              <p class="fs-4 fw-bold text-garuda-blue">0800-1-80707</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <i class="fab fa-whatsapp fa-3x text-success mb-3"></i>
+              <h5>WhatsApp</h5>
+              <p class="fs-4 fw-bold text-success">0811-1507070</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <i class="fas fa-envelope fa-3x text-garuda-orange mb-3"></i>
+              <h5>Email</h5>
+              <p class="fw-bold">care@garuda-indonesia.com</p>
+            </div>
+          </div>
+          <form id="contactForm">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label fw-bold">No. Tiket / Nama</label>
+                <input type="text" class="form-control" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label fw-bold">No. Telepon</label>
+                <input type="tel" class="form-control" required>
+              </div>
+              <div class="col-12">
+                <label class="form-label fw-bold">Pesan / Keluhan</label>
+                <textarea class="form-control" rows="4" required placeholder="Jelaskan kebutuhan Anda..."></textarea>
+              </div>
+              <div class="col-12 text-center">
+                <button type="submit" class="btn btn-garuda-blue btn-lg px-5">
+                  <i class="fas fa-paper-plane me-2"></i>Kirim Pesan
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5><i class="fas fa-plane me-2"></i>PT Garuda Indonesia (Persero) Tbk</h5>
+          <p>Soekarno-Hatta International Airport | Call Center: 0800-1-80707</p>
+        </div>
+        <div class="col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="pelayanan.html" class="text-white-50">Pelayanan</a></li>
+            <li><a href="#berita" class="text-white-50">Berita</a></li>
+            <li><a href="#kontak" class="text-white-50">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6>Sosial Media</h6>
+          <div>
+            <a href="#" class="text-white me-3 fs-4"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white me-3 fs-4"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-white me-3 fs-4"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white fs-4"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="my-3">
+      <p class="text-center mb-0">&copy; 2026 PT Garuda Indonesia. Maskapai Nasional Indonesia. Semua hak dilindungi.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+

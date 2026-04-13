@@ -1,0 +1,152 @@
+/* PT Garuda Airlines - Service Info System Styles */
+/* Adapted from PT Telkom + Cafe Dorame - Garuda Theme: Blue #003087, Orange #FDB927 */
+
+:root {
+  --garuda-blue: #003087;
+  --garuda-orange: #FDB927;
+  --garuda-dark: #001F5B;
+  --garuda-light: #F0F4F8;
+  --shadow: 0 10px 30px rgba(0,48,135,0.15);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+section { padding: 5rem 0; }
+
+/* Navbar */
+.navbar { background: linear-gradient(135deg, var(--garuda-dark), var(--garuda-blue)); box-shadow: var(--shadow); }
+
+.navbar-brand { font-weight: 700 !important; }
+
+/* Hero */
+.hero {
+  background: linear-gradient(rgba(0,48,135,0.9), rgba(0,0,0,0.7)), 
+              url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') center/cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  margin-top: 76px;
+}
+
+.bumn-badge { color: var(--garuda-orange); font-weight: 700; }
+
+/* Cards & Buttons */
+.btn-garuda-blue { background: var(--garuda-blue); border-color: var(--garuda-blue); color: white; }
+.btn-garuda-blue:hover { background: var(--garuda-dark); transform: translateY(-2px); }
+.btn-outline-garuda-blue { color: var(--garuda-blue); border-color: var(--garuda-blue); }
+.btn-outline-garuda-blue:hover { background: var(--garuda-blue); color: white; }
+
+.btn-garuda-orange { background: var(--garuda-orange); border-color: var(--garuda-orange); color: var(--garuda-dark); }
+.btn-garuda-orange:hover { background: #e6a700; transform: translateY(-2px); }
+.btn-outline-garuda-orange { color: var(--garuda-orange); border-color: var(--garuda-orange); }
+.btn-outline-garuda-orange:hover { background: var(--garuda-orange); color: var(--garuda-dark); }
+
+.card { border: none; border-radius: 20px; transition: all 0.3s; box-shadow: var(--shadow); }
+.card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,48,135,0.2); }
+.hover-lift:hover { transform: translateY(-5px); }
+
+.text-garuda-blue { color: var(--garuda-blue) !important; }
+.text-garuda-orange { color: var(--garuda-orange) !important; }
+
+.service-icon i { color: var(--garuda-blue); font-size: 3rem; opacity: 0.8; }
+
+/* Sections */
+.section-title { 
+  font-size: 2.8rem; 
+  font-weight: 700; 
+  position: relative; 
+  display: inline-block; 
+}
+.section-title::after { 
+  content: ''; 
+  position: absolute; 
+  bottom: -10px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  width: 60px; 
+  height: 4px; 
+  background: var(--garuda-orange); 
+}
+
+.search-container {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.search-container input {
+  width: 100%;
+  padding: 1rem 1rem 1rem 3rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 50px;
+  font-size: 1.1rem;
+}
+.search-icon {
+  position: absolute;
+  left: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--garuda-blue);
+}
+
+/* Stats Cards */
+.card-body i { opacity: 0.8; transition: 0.3s; }
+.card:hover .card-body i { transform: scale(1.1); opacity: 1; }
+
+/* Forms */
+.form-control, .form-select {
+  border-radius: 15px;
+  border: 2px solid #e0e0e0;
+  padding: 0.875rem 1.25rem;
+  transition: all 0.3s;
+}
+.form-control:focus, .form-select:focus {
+  border-color: var(--garuda-blue);
+  box-shadow: 0 0 0 0.2rem rgba(0,48,135,0.15);
+}
+
+/* Footer */
+footer { background: var(--garuda-dark); }
+
+/* Animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.card { animation: fadeInUp 0.6s ease forwards; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero { margin-top: 70px; min-height: 80vh; }
+  .section-title { font-size: 2rem; }
+  .display-4 { font-size: 2.5rem; }
+}
+
+/* Service Items Search */
+.service-item {
+  transition: all 0.3s;
+}
+.service-item.hidden {
+  display: none;
+}
+
+/* Admin Toggle */
+.admin-toggle {
+  border-radius: 50px !important;
+  font-weight: 600;
+  box-shadow: var(--shadow);
+}
+.admin-toggle:hover { transform: scale(1.05); }
+
+/* Tables */
+.table { border-radius: 15px; overflow: hidden; }
+.table thead th { background: var(--garuda-blue); color: white; }
+.table-hover tbody tr:hover { background: rgba(0,48,135,0.05); }
+
