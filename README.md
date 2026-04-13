@@ -1,4 +1,4 @@
-# Sistem Informasi Pelayanan PT Garuda Indonesia 🛫
+Sistem Informasi Pelayanan PT Garuda Indonesia 🛫
 
 ## Fitur Lengkap:
 - **Landing Page**: Hero, stats, profil, layanan quick links, berita, kontak
